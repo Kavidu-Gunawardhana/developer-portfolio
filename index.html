@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Alex Morgan - Web Developer specializing in accessible, modern, and responsive web applications.">
+  <meta name="author" content="Alex Morgan">
+  <title>Alex Morgan | Web Developer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/profile.svg">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessibility: Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo" aria-label="Alex Morgan Portfolio Home">
+        <span class="logo-bracket">&lt;</span>Alex<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="navbar" id="navbar" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls: Theme Switcher & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Toggle dark and light color theme" title="Toggle theme">
+          <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button id="mobile-menu-toggle" class="icon-btn mobile-menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- Hero / Intro Section -->
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span> Available for Web Development Opportunities
+          </div>
+          <h1 id="hero-heading" class="hero-title">
+            Hi, I'm <span class="text-gradient">Alex Morgan</span>
+          </h1>
+          <p class="hero-subtitle">
+            I build <span id="typing-text" class="typed-text" aria-label="accessible web apps, responsive designs, modern interfaces">modern websites</span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-description">
+            Passionate web developer focused on creating responsive, accessible, and user-friendly digital experiences using clean HTML5, modern CSS3, and dynamic JavaScript.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-social-links" aria-label="Social media profiles">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit Alex Morgan's GitHub profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit Alex Morgan's LinkedIn profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:alex.morgan.dev@example.com" class="social-link" aria-label="Send email to Alex Morgan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <figure class="profile-figure">
+            <img src="images/profile.svg" alt="Portrait illustration of Alex Morgan, a full-stack web developer smiling with glasses" class="hero-profile-img" width="340" height="340">
+            <figcaption class="sr-only">Alex Morgan - Web Developer Profile</figcaption>
+          </figure>
+          <div class="experience-floating-badge" aria-hidden="true">
+            <span class="badge-number">100%</span>
+            <span class="badge-text">Web Standards &amp; Accessibility</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <h3 class="about-subtitle">Designing with empathy, engineering with precision.</h3>
+            <p>
+              I am a dedicated web developer who loves building web applications that are fast, accessible to all users, and visually engaging. My approach blends semantic markup structure, scalable CSS architectures, and interactive, clean JavaScript.
+            </p>
+            <p>
+              Throughout my learning and development journey, I have prioritized web accessibility (WCAG), mobile-first responsive design, and writing clean, maintainable code. Whether building interactive user interfaces or structuring accessible content, I make sure the user experience is always at the center of every decision.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">🎓</span>
+                <div>
+                  <h4 class="highlight-title">Education</h4>
+                  <p class="highlight-desc">Computer Science &amp; Web Development</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">⚡</span>
+                <div>
+                  <h4 class="highlight-title">Performance</h4>
+                  <p class="highlight-desc">Optimized assets &amp; clean code</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">♿</span>
+                <div>
+                  <h4 class="highlight-title">Accessibility</h4>
+                  <p class="highlight-desc">WCAG compliant &amp; screen-reader friendly</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">📱</span>
+                <div>
+                  <h4 class="highlight-title">Responsiveness</h4>
+                  <p class="highlight-desc">Mobile, tablet &amp; desktop ready</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-card" aria-label="Personal quick facts">
+            <h3 class="card-title">Quick Information</h3>
+            <ul class="quick-facts-list">
+              <li><strong>Name:</strong> <span>Alex Morgan</span></li>
+              <li><strong>Role:</strong> <span>Front-End / Full-Stack Developer</span></li>
+              <li><strong>Location:</strong> <span>San Francisco, CA (Remote)</span></li>
+              <li><strong>Core Tech:</strong> <span>HTML5, CSS3, JavaScript (ES6+)</span></li>
+              <li><strong>Status:</strong> <span class="badge-success">Open for Work</span></li>
+            </ul>
+            <div class="resume-download-box">
+              <a href="#contact" class="btn btn-primary btn-block">Contact For Inquiries</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">My Expertise</span>
+          <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Frontend Development -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🎨</span>
+              <h3 class="category-title">Front-End Development</h3>
+            </div>
+            <p class="category-desc">Crafting structured, styled, and dynamic web interfaces.</p>
+            <ul class="skill-tags-list" aria-label="Frontend skills list">
+              <li class="skill-tag">HTML5 &amp; Semantic Tags</li>
+              <li class="skill-tag">CSS3 / Flexbox / Grid</li>
+              <li class="skill-tag">JavaScript (ES6+)</li>
+              <li class="skill-tag">Responsive Design</li>
+              <li class="skill-tag">DOM Manipulation</li>
+              <li class="skill-tag">CSS Animations</li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 2: Accessibility & Standards -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🛡️</span>
+              <h3 class="category-title">Accessibility &amp; Best Practices</h3>
+            </div>
+            <p class="category-desc">Ensuring web applications are inclusive and maintainable.</p>
+            <ul class="skill-tags-list" aria-label="Accessibility and standards skills list">
+              <li class="skill-tag">WCAG 2.1 Guidelines</li>
+              <li class="skill-tag">ARIA Attributes &amp; Roles</li>
+              <li class="skill-tag">Keyboard Navigation</li>
+              <li class="skill-tag">Alt-Text Optimization</li>
+              <li class="skill-tag">Semantic Hierarchy</li>
+              <li class="skill-tag">Color Contrast Auditing</li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 3: Tools & Workflow -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon" aria-hidden="true">🛠️</span>
+              <h3 class="category-title">Tools &amp; Version Control</h3>
+            </div>
+            <p class="category-desc">Modern workflows for continuous development and deployment.</p>
+            <ul class="skill-tags-list" aria-label="Tools and workflow skills list">
+              <li class="skill-tag">Git &amp; GitHub</li>
+              <li class="skill-tag">GitHub Pages Deployment</li>
+              <li class="skill-tag">VS Code &amp; Copilot</li>
+              <li class="skill-tag">Browser DevTools</li>
+              <li class="skill-tag">Lighthouse Audits</li>
+              <li class="skill-tag">Responsive Emulation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 id="projects-heading" class="section-title">Portfolio Projects</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle">Explore a collection of web projects demonstrating HTML structure, CSS styling, responsive layouts, and JavaScript interactivity.</p>
+        </header>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" data-filter="web-app" aria-pressed="false">Web Apps</button>
+          <button class="filter-btn" data-filter="frontend" aria-pressed="false">Front-End</button>
+          <button class="filter-btn" data-filter="javascript" aria-pressed="false">JavaScript</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card" data-category="web-app frontend" aria-labelledby="proj-title-1">
+            <figure class="project-media">
+              <img src="images/project1.svg" alt="User interface preview of ShopEase e-commerce platform displaying product catalog and cart" class="project-img" width="600" height="400" loading="lazy">
+              <div class="project-overlay" aria-hidden="true">
+                <span class="overlay-text">Explore Project Details</span>
+              </div>
+            </figure>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 id="proj-title-1" class="project-title">ShopEase E-Commerce Store</h3>
+              <p class="project-description">
+                A fully responsive e-commerce storefront featuring dynamic product filtering, an interactive shopping cart with live total calculations, and accessible modal dialogs.
+              </p>
+              <div class="project-links">
+                <a href="#projects" class="project-link demo-trigger" data-project="ShopEase E-Commerce">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code for ShopEase on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="web-app javascript" aria-labelledby="proj-title-2">
+            <figure class="project-media">
+              <img src="images/project2.svg" alt="Interactive Kanban board screenshot of TaskFlow productivity app with three workflow columns" class="project-img" width="600" height="400" loading="lazy">
+              <div class="project-overlay" aria-hidden="true">
+                <span class="overlay-text">Explore Project Details</span>
+              </div>
+            </figure>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">JavaScript ES6</span>
+                <span class="tag">CSS Flexbox</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+              <h3 id="proj-title-2" class="project-title">TaskFlow - Kanban Board</h3>
+              <p class="project-description">
+                A productivity web application with interactive drag-and-drop task management, persistent state in localStorage, category filters, and keyboard accessibility.
+              </p>
+              <div class="project-links">
+                <a href="#projects" class="project-link demo-trigger" data-project="TaskFlow Kanban">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code for TaskFlow on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="frontend javascript" aria-labelledby="proj-title-3">
+            <figure class="project-media">
+              <img src="images/project3.svg" alt="Weather dashboard interface showing current temperature in Tokyo and 4-day forecast" class="project-img" width="600" height="400" loading="lazy">
+              <div class="project-overlay" aria-hidden="true">
+                <span class="overlay-text">Explore Project Details</span>
+              </div>
+            </figure>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Fetch API</span>
+                <span class="tag">CSS Variables</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+              <h3 id="proj-title-3" class="project-title">SkyCast Weather Forecast App</h3>
+              <p class="project-description">
+                Interactive weather forecast dashboard utilizing modern asynchronous JavaScript (Async/Await) to query real-time meteorological metrics, location search, and responsive cards.
+              </p>
+              <div class="project-links">
+                <a href="#projects" class="project-link demo-trigger" data-project="SkyCast Weather App">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code for SkyCast on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="web-app frontend" aria-labelledby="proj-title-4">
+            <figure class="project-media">
+              <img src="images/project4.svg" alt="Analytics metrics dashboard screenshot of PulseAI showing requests per second and latency chart" class="project-img" width="600" height="400" loading="lazy">
+              <div class="project-overlay" aria-hidden="true">
+                <span class="overlay-text">Explore Project Details</span>
+              </div>
+            </figure>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML5 Canvas</span>
+                <span class="tag">Dark Mode</span>
+                <span class="tag">Semantic HTML</span>
+              </div>
+              <h3 id="proj-title-4" class="project-title">PulseAI Analytics Dashboard</h3>
+              <p class="project-description">
+                High-performance developer dashboard displaying real-time metrics, dynamic SVG charts, customizable widgets, and comprehensive accessibility features.
+              </p>
+              <div class="project-links">
+                <a href="#projects" class="project-link demo-trigger" data-project="PulseAI Dashboard">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Preview</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code for PulseAI on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Education Timeline Section -->
+    <section class="section experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Career Journey</span>
+          <h2 id="experience-heading" class="section-title">Education &amp; Experience</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="timeline" role="list">
+          <!-- Timeline Item 1 -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2026 - Present</span>
+              <h3 class="timeline-title">Junior Front-End Developer &amp; Project Contributor</h3>
+              <p class="timeline-organization">Open Source &amp; Freelance</p>
+              <p class="timeline-description">
+                Building responsive web interfaces, contributing to community open-source repositories, and implementing WCAG accessibility enhancements across client web pages.
+              </p>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2 -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2025 - 2026</span>
+              <h3 class="timeline-title">Web Development Specialization</h3>
+              <p class="timeline-organization">Coursera &amp; Microsoft</p>
+              <p class="timeline-description">
+                Completed hands-on courses in HTML5 structure, modern CSS styling, responsive media queries, JavaScript interactivity, and assisted development using Microsoft Copilot.
+              </p>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3 -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2023 - 2025</span>
+              <h3 class="timeline-title">B.S. in Computer Science / Information Technology</h3>
+              <p class="timeline-organization">University Campus</p>
+              <p class="timeline-description">
+                Core coursework in algorithms, data structures, software engineering principles, UI/UX interaction design, and client-server network architectures.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-subtitle">Have a question or interested in collaborating? Send me a message and I'll get back to you promptly!</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Contact Information Cards -->
+          <div class="contact-info-wrapper">
+            <div class="contact-info-card">
+              <div class="info-icon" aria-hidden="true">📧</div>
+              <div class="info-details">
+                <h3 class="info-label">Email</h3>
+                <a href="mailto:alex.morgan.dev@example.com" class="info-val">alex.morgan.dev@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <div class="info-details">
+                <h3 class="info-label">Location</h3>
+                <p class="info-val">San Francisco, California, USA (Open to Remote)</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="info-icon" aria-hidden="true">💼</div>
+              <div class="info-details">
+                <h3 class="info-label">Social &amp; Profiles</h3>
+                <div class="info-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> • 
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="user-name" class="form-label">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input 
+                  type="text" 
+                  id="user-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="e.g. Jane Doe" 
+                  required 
+                  aria-required="true"
+                  autocomplete="name"
+                >
+                <span class="error-message" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input 
+                  type="email" 
+                  id="user-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="e.g. jane.doe@example.com" 
+                  required 
+                  aria-required="true"
+                  autocomplete="email"
+                >
+                <span class="error-message" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="user-subject" class="form-label">Subject</label>
+                <input 
+                  type="text" 
+                  id="user-subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="e.g. Project Inquiry / Collaboration"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="user-message" class="form-label">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea 
+                  id="user-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="5" 
+                  placeholder="Write your message here..." 
+                  required 
+                  aria-required="true"
+                ></textarea>
+                <span class="error-message" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Landmark -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo footer-logo" aria-label="Alex Morgan Portfolio">
+          <span class="logo-bracket">&lt;</span>Alex<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Building clean, accessible, and responsive web solutions.</p>
+      </div>
+
+      <div class="footer-center">
+        <nav aria-label="Footer quick links">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials" aria-label="Footer social links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Alex Morgan on GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Alex Morgan on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:alex.morgan.dev@example.com" class="social-link" aria-label="Email Alex Morgan">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+        <p class="copyright">&copy; <span id="current-year">2026</span> Alex Morgan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Interactive Project Preview Modal Dialog -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close dialog window">&times;</button>
+      <div class="modal-body">
+        <span class="modal-tag" id="modal-tag">Project Demo</span>
+        <h3 id="modal-title" class="modal-title">Project Title</h3>
+        <p id="modal-desc" class="modal-description">Detailed description will appear here.</p>
+        <div class="modal-actions">
+          <button class="btn btn-primary modal-action-btn" id="modal-confirm">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Notification Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Action successful!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
